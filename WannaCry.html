@@ -7,7 +7,7 @@
 	<body>
 		<div class="layout">
 			<div class="header">
-				<h1>Header</h1>
+				<h1>Welcome</h1>
 				<ul>
 					<li><a href="index.html">Home Page</a></li>
         			<li><a href="Malware-Analysis.html">Malware Analysis Page</a></li>
@@ -23,7 +23,7 @@
 				<p>This sample was obtained through the TCM Practical Malware Analysis Course</p>
 				<h2>Static Analysis</h2>
 				<p>First thing you would want to do when starting Static Analysis is check to see if the hashes have been submitted
-					to a malware logging database. In this instance, I was using VirusTotal. By submitting the SHA256 hash to VirusTotal, I could find valuable information that could speed up the static Analysis portion. Some stuff of interest is the sample being a 32-bit executable written in C++
+					to a malware logging database. In this instance, I was using VirusTotal. By submitting the SHA256 hash to VirusTotal, I could find valuable information that could speed up the static Analysis portion. Some stuff of interest is the sample being a 32-bit executable written in C++.
 				</p>
 				<img src="Images/WannaCry1.jpeg">
 				<p>Next step in the static analysis is to pull the strings from the binary. This is important since many binaries use 
@@ -37,8 +37,8 @@
 				<img src="Images/WannaCry3.jpeg">
 				<p></p>
 				<p>We can see further in the strings that there's a bunch of base64 encrypted text used in the binary. The most interesting pieces of evidence we can find in the strings are a file being created somewhere on the C drive, a random URL being referenced, and tasksche.exe starting a task.</p>
-				<img src="Images/WannaCry4.jpeg">
-				<img src="Images/WannaCry5.jpeg">
+				<img src="Images/WannaCry4.jpeg" id = "pcap1">
+				<img src="Images/WannaCry5.jpeg" id = "pcap2">
 				<p>We can now use a tool used to analyze the binary called PEStudio. When loaded we can see many different aspects of the binary we can't normally see by just pulling the strings out. Some important information I found was in the indicators, we can see the binary contains other files that will be executed once this one is executed.</p>
 				<img src="Images/WannaCry6.jpeg">	
 				<p>If we go to the libraries tab on PEStudio, we can see some kind of Socket and Internet commnunication usage. If we go to the imports, we can see some Cryptography libraries and API calls relating to internet connections. With this info, we can assume the binary is opneing and closing ports.</p>

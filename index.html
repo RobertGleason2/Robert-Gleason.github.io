@@ -2,31 +2,77 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Home Page</title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="Homepage.css">
+		<script src="script.js"></script>
 	</head>
 	
-	<body>
+
+	<body class="darkmode">
+		
 		<div class="layout">
 			<div class="header">
-				<h1>Welcome</h1>
-				<ul>
-					<li><a href="Malware-Analysis.html">Malware Analysis Posts</a></li>
-					<li><a href="https://github.com/RobertGleason2">GitHub</a></li>
-					<li><a href="https://www.linkedin.com/in/robert-gleason-b08a69255/">LinkedIn</a></li>
-				</ul>	
+				<div class="title">
+					<h1>Welcome</h1>		
+				</div>
+				<button id="darkModeToggle"> 🌙 Toggle Dark Mode</button>		
+				<div class="nav-links">
+					<ul>
+						<li><a href="Malware-Analysis.html">Malware Analysis Posts</a></li>
+						<li><a href="https://github.com/RobertGleason2">GitHub</a></li>
+						<li><a href="https://www.linkedin.com/in/robert-gleason-b08a69255/">LinkedIn</a></li>
+						<li><a href="Robert_Gleason_Resume.pdf" target="_blank">Resume</a></li>
+					</ul>
+				</div>		
+				
 			</div>
-
+			<div class="cert-section">
+				<h1>Certifications</h1>
+				<ul class="badge-list">
+					<li>ITF+</li>
+					<li>Network+</li>
+					<li>eJPT</li>
+					<li>Splunk Power User</li>
+					<li>Security+ </li>
+					<li>PJPT (Expected April 2025)</li>
+					<li>AWS Practitioner  (Expected April 2025)</li>
+				</ul>
+				<h1></h1>
+				
+			</div>
 			<div class="main">
 				<h1>Hello, I'm Robert Gleason</h1>
 				<p>I currently have a B.S. in Cybersecurity and am currently pursuing a career in Cybersecurity. <br></p>
-				<p>This will be the main page I update on the various projects I work on in the field. <br></p>
+				<p>I am apart of the Nexus Program at CSU where I aim to gain a nuber of industry certifications in Cybersecurity.</p>
+				<p>I already have earned my ITF+, Network+, eJPT, Security+ and Splunk Power User certifications and am currently working on my PJPT and AWS Practitioner certifications.</p>
+				<p>This website will be the place I post all of my different projects! <br></p>
+
+				<p></p>
+
+			</div>
+			<div class="image-grid">
+				<h2>Skills</h2>
+				<ul class="badge-list">
+					<li>Python 🐍</li>
+					<li>Burp Suite</li>
+					<li>Wireshark</li>
+					<li>Splunk</li>
+					<li>Linux CLI</li>
+					<li>Metasploit</li>
+					<li>Proxmox</li>
+					<li>Procmon</li>
+					<li>PEStudio</li>
+				</ul>
 			</div>
 			<div class="footer">
 				<p>Thank you for visiting my website!</p>
 			</div>
 			
+
 		</div>
 	</body>
 
 
 </html>
+<!--Nav bar is from https://freefrontend.com/css-menu/ 
+Look at code between <navs>
+-->

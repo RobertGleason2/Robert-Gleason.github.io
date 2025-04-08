@@ -1,0 +1,130 @@
+
+body {
+    margin: 0; /* Remove default margin */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    /*background-color: #f0f0f0;  Optional: Background color for contrast */
+}
+
+.layout{
+    display: grid;
+    grid-template-rows: auto auto auto ; /* You need to match the row template with amount of rows*/
+    grid-template-columns: auto auto;
+    background-color: white;
+    width: 100vw; /* Full view width*/
+    height: 100vh;/* Full view width*/
+    grid-template-areas:    
+    "header header header"
+    "cert-section main image-grid"
+    "footer footer footer";
+}
+.header{
+  
+    grid-area: header;
+    border: 3px solid black;
+    text-align: center;
+    font-family: Arial;
+    text-align: center;
+    max-height: 160px;
+    background-color: white;
+
+
+}
+.cert-section{
+    grid-area: cert-section;
+    border: 3px solid black;
+    font-family: Arial;
+    text-align: center;
+    background-color: white;
+    min-height: 500px;
+    min-width: 300px;
+}
+
+.main{
+    grid-area: main;
+    border: 3px solid black;
+    font-family: Arial;
+    text-align: center;
+    background-color: white;
+    min-height: 500px;
+    min-width: 450px;
+
+}
+.image-grid{
+    grid-area: image-grid;
+    border: 3px solid black;
+    font-family: Arial;
+    text-align: center;
+    background-color: white;
+    min-height: 400px;
+    min-width: 250px;
+}
+.footer{
+    text-align: center;
+    grid-area: footer;
+    border: 3px solid black;
+    font-family: Arial;
+    text-align: center;
+    background-color: white;
+
+}
+.title{
+  text-align: center;
+}
+.nav-links ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+  list-style: none;
+}
+
+ul, li{
+    list-style: none;
+    text-align: center;
+}
+.froggy2{
+    max-width: 50%;
+    
+}
+
+
+body.darkmode {
+  background-color: #121212;
+  color: #f0f0f0;
+}
+
+body.darkmode .layout,
+body.darkmode .header,
+body.darkmode .cert-section,
+body.darkmode .main,
+body.darkmode .image-grid,
+body.darkmode .footer {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  border-color: #333;
+}
+
+#darkModeToggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 12px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#darkModeToggle:hover {
+  background-color: #555;
+}
+
+
+
+

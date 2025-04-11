@@ -27,7 +27,7 @@ body {
     text-align: center;
     font-family: Arial;
     text-align: center;
-    max-height: 160px;
+    max-height: 180px;
     background-color: white;
 
 
@@ -86,11 +86,6 @@ ul, li{
     list-style: none;
     text-align: center;
 }
-.froggy2{
-    max-width: 50%;
-    
-}
-
 
 body.darkmode {
   background-color: #121212;
